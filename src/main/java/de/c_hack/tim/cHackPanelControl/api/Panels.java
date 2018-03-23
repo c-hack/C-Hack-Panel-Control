@@ -98,7 +98,7 @@ public class Panels {
 		//Flush log
 		if (Main.getConf().getConfigValue("FlushLog").contentEquals("true")) {
 			if (flushLog == null) try {
-				flushLog = new Log(new String[] { "log/flush.log" }, Log.DEBUG);
+				flushLog = new Log(new String[] { "logs/flush.log" }, Log.DEBUG);
 			} catch (IOException e) {
 				Main.getLog().logException(e, Log.ERROR, false);
 			}

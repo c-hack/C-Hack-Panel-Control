@@ -1,5 +1,5 @@
 /target/
 /OLD/
-/log/
+/logs/
 *.conf
 flush
