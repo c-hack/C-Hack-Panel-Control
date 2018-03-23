@@ -2,7 +2,7 @@
  * C-Hack Panel Java Control System
  * 
  * @author Tim Neumann
- * @version 1.0.0
+ * @version 1.0.1
  * @copyright (c) Tim Neumann 2017-2018
  * @license:
  * This Source Code Form is subject to the terms of the Mozilla Public

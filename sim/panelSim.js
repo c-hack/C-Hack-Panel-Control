@@ -1,3 +1,15 @@
+/*
+ * C-Hack Panel Java Control System
+ * 
+ * @author Tim Neumann
+ * @version 1.0.1
+ * @copyright (c) Tim Neumann 2017-2018
+ * @license:
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ */
 var BASE_FILE_NAME = "panel%.dat";
 
 function Led() {
