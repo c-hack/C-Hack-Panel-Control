@@ -14,6 +14,10 @@ To compile and run from source:  Java 1.8 JDK, [Maven](https://maven.apache.org/
 To build it run `mvn package`. This will create a jar in `target`.  
 To execute run `java -jar path/to/C-Hack-Panel-Control-X.X.X-jar-with-dependencies.jar <name of snippet> <arguments for snippet>`.  
 
+## How to use
+### Testing locally:
+If you want to test locally, you can see what the panels would show, by just opening the file `sim/index.html` with a browser.(Tested in Firefox 59)
+
 ## Contributing
 This project was created with eclipse, therefore you can just import the whole repo as a eclipse project.
 
