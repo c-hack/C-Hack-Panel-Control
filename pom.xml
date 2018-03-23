@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.c-hack.tim</groupId>
   <artifactId>C-Hack-Panel-Control</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>C-Hack-Panel-Control</name>
   <description>Control Software for the C-Hack Panels</description>
   <url>https://github.com/c-hack/C-Hack-Panel-Control/</url>
@@ -55,18 +55,6 @@
 					<version>${junit.platform.version}</version>
 				</dependency>
 			</dependencies>
-		</plugin>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-javadoc-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>attach-javadocs</id>
-					<goals>
-						<goal>jar</goal>
-					</goals>
-				</execution>
-			</executions>
 		</plugin>
 	</plugins>
   </build>
