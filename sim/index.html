@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+  .panel {
+    background-color: Gray;
+    height: 430px;
+    width: 250px;
+  }
+  
+  .panelContainer {
+    border-spacing: 40px;
+  }
+  
+  .panel > table {
+    border-spacing: 10px;
+  }
+  
+  .panel > table > tr > td {
+    padding: 0px;
+  }
+  
+  .led {
+    background-color: Black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+</style>
+<title> C-Hack Panel Simulator </title>
+<meta charset="UTF-8"/>
+</head>
+<body onload="run();" >
+<h1> C-Hack Panel Simulator </h1>
+  <table class="panelContainer"><tr>
+    <td><div class="panel" id="panel1"></div></td>
+    <td><div class="panel" id="panel2"></div></td>
+    <td><div class="panel" id="panel3"></div></td>
+    <td><div class="panel" id="panel4"></div></td>
+    <td><div class="panel" id="panel5"></div></td>
+    <td><div class="panel" id="panel6"></div></td>
+  </tr></table>
+  <script src="panelSim.js"></script>
+</body>
+</html>
