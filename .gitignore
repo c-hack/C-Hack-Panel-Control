@@ -1,6 +1,5 @@
 /target/
 /OLD/
 /log/
-/sim/
 *.conf
 flush

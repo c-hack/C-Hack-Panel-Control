@@ -15,6 +15,7 @@ package de.c_hack.tim.cHackPanelControl;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.c_hack.tim.cHackPanelControl.animationSnippets.AllBlack;
 import de.c_hack.tim.cHackPanelControl.animationSnippets.FancyMovingOpen;
 import de.c_hack.tim.cHackPanelControl.animationSnippets.LedTest1;
 import de.c_hack.tim.cHackPanelControl.animationSnippets.MakerNight;
@@ -36,5 +37,6 @@ public class LoadedSnippets {
 		LOADED_SNIPPETS.add(FancyMovingOpen.class);
 		LOADED_SNIPPETS.add(MakerNight.class);
 		LOADED_SNIPPETS.add(Schnee.class);
+		LOADED_SNIPPETS.add(AllBlack.class);
 	}
 }
