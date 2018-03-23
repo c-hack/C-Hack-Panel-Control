@@ -86,7 +86,6 @@ Panel.prototype.loadData = function() {
                     leds[r][c].b = cells[c].substring(2);
                 }
             }
-            console.log(leds);
             for(i in leds) {
                 for(j in leds[i]) {
                     me.leds[i][j].setColor(leds[i][j]);
