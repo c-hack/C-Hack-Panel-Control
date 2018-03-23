@@ -8,11 +8,11 @@ This new software was made to replace the old Sequencer.
 
 ## Requirements
 To run releases: Java 1.8 JRE  
-To compile and run from source:  Java 1.8 JDK and [Maven](https://maven.apache.org/index.html)
+To compile and run from source:  Java 1.8 JDK, [Maven](https://maven.apache.org/index.html) and [TimLib](https://github.com/neumantm/TimLib)
 
 ## Building and running
 To build it run `mvn package`. This will create a jar in `target`.  
-To execute run `java -jar path/to/C-Hack-Panel-Control-X.X.X.jar <name of snippet> <arguments for snippet>`.  
+To execute run `java -jar path/to/C-Hack-Panel-Control-X.X.X-jar-with-dependencies.jar <name of snippet> <arguments for snippet>`.  
 
 ## Contributing
 This project was created with eclipse, therefore you can just import the whole repo as a eclipse project.
