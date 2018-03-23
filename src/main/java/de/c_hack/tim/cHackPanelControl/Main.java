@@ -16,16 +16,10 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.NoSuchElementException;
 
-import de.c_hack.tim.cHackPanelControl.animationSnippets.FancyMovingOpen;
 import de.c_hack.tim.cHackPanelControl.animationSnippets.GenericSnippet;
-import de.c_hack.tim.cHackPanelControl.animationSnippets.LedTest1;
-import de.c_hack.tim.cHackPanelControl.animationSnippets.MakerNight;
-import de.c_hack.tim.cHackPanelControl.animationSnippets.Schnee;
 import de.c_hack.tim.lib.Config;
 import de.c_hack.tim.lib.Log;
 
@@ -49,19 +43,6 @@ public class Main {
 	 * The currently loaded Class to be run.
 	 */
 	private static AnimationSnippet current;
-
-	/**
-	 * All known animation snippets
-	 */
-	public static final List<Class<? extends AnimationSnippet>> AVAILABLE_SNIPPETS = new ArrayList<>();
-
-	static {
-		AVAILABLE_SNIPPETS.add(GenericSnippet.class);
-		AVAILABLE_SNIPPETS.add(LedTest1.class);
-		AVAILABLE_SNIPPETS.add(FancyMovingOpen.class);
-		AVAILABLE_SNIPPETS.add(MakerNight.class);
-		AVAILABLE_SNIPPETS.add(Schnee.class);
-	}
 
 	/**
 	 * *Main*
@@ -148,7 +129,7 @@ public class Main {
 			System.exit(1);
 		}
 
-		for (Class<? extends AnimationSnippet> c : AVAILABLE_SNIPPETS) {
+		for (Class<? extends AnimationSnippet> c : LoadedSnippets.LOADED_SNIPPETS) {
 			if (!c.getPackage().equals(GenericSnippet.class.getPackage())) continue; //So we don't get name conflicts
 			if (c.getName().substring(c.getName().lastIndexOf(".") + 1).equals(args[0])) {
 				try {
