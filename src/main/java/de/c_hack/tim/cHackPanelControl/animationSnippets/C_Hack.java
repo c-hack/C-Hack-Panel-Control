@@ -32,7 +32,7 @@ public class C_Hack extends AnimationSnippet {
 	@Override
 	public void setup(String[] args) {
 		debug("Setting up");
-		this.setFreq(2F);
+		this.setFreq(1F);
 		Panel[] panels = new Panel[8];
 		panels[0] = new Panel("C");
 		panels[0].replaceColor(PColor.WHITE, PColor.GREEN);
@@ -58,7 +58,7 @@ public class C_Hack extends AnimationSnippet {
 	 */
 	@Override
 	public void loop() {
-
+		debug("Running loop");
 		this.mov.move(-1, 0);
 
 		Panels.setPanels(this.mov.getPanelArray(0, 0, 1, 6));
