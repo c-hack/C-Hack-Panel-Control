@@ -97,8 +97,13 @@ public class Main {
 			log.logException(e, Log.ERROR, true);
 		}
 
-		if (conf.getConfigValue("DebugLog").contentEquals("true")) log.setLogLevel(Log.DEBUG);
-		log.log("Enabled Debug logging...", Log.DEBUG);
+		if (conf.getConfigValue("DebugLog").contentEquals("true")) try {
+			log.addFile("logs/debug.log", Log.DEBUG);
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+		log.log("Enabled Debug logging to log file...", Log.INFO);
 
 		//Setting up run file.
 		File runFile = new File(conf.getConfigValue("RunFile"));
