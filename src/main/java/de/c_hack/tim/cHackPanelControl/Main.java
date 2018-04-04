@@ -84,6 +84,7 @@ public class Main {
 			configFields.put("DebugLog", "false");
 			configFields.put("FlushLog", "false");
 			configFields.put("FlushFile", "flush");
+			configFields.put("FlushAscii", "false");
 			configFields.put("SimulatorFiles", "sim/panel");
 			configFields.put("EnableSimulator", "true");
 			configFields.put("RunFile", "run");

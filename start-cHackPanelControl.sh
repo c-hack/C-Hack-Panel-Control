@@ -1,5 +1,8 @@
 #!/bin/bash
 ARGUMENTS="C_Hack"
+SERIAL="/dev/ttyAMA0"
+BAUD="115200"
+
 cd $(dirname $(realpath $0))
 
 git remote update
@@ -25,6 +28,9 @@ do
 done
 
 echo $biggest
+
+#Init Serial
+stty -F $SERIAL $BAUD
 
 java -jar target/C-Hack-Panel-Control-$biggest-jar-with-dependencies.jar $ARGUMENTS
 

@@ -92,7 +92,12 @@ public class Panels {
 	private static void flushB(int[] bytes) {
 		String bytesS = "";
 		for (int b : bytes) {
-			bytesS += Integer.toString(b) + " ";
+			if (Main.getConf().getConfigValue("FlushAscii").contentEquals("true")) {
+				bytesS += Integer.toString(b) + " ";
+			}
+			else {
+				bytesS += ((char) b);
+			}
 		}
 
 		//Flush log
@@ -111,7 +116,9 @@ public class Panels {
 
 		BufferedWriter bw = null;
 
-		bytesS += System.getProperty("line.separator");
+		if (Main.getConf().getConfigValue("FlushAscii").contentEquals("true")) {
+			bytesS += System.getProperty("line.separator");
+		}
 
 		try {
 			bw = new BufferedWriter(new FileWriter(Main.getConf().getConfigValue("FlushFile"), true));
