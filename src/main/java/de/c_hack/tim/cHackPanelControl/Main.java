@@ -100,11 +100,10 @@ public class Main {
 
 		if (conf.getConfigValue("DebugLog").contentEquals("true")) try {
 			log.addFile("logs/debug.log", Log.DEBUG);
+			log.log("Enabled Debug logging to log file...", Log.INFO);
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-
-		log.log("Enabled Debug logging to log file...", Log.INFO);
 
 		//Setting up run file.
 		File runFile = new File(conf.getConfigValue("RunFile"));

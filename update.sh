@@ -3,7 +3,7 @@
 cd $(dirname $(realpath $0))
 
 git remote update
-ret=$(git status -uno|grep "Ihr Branch ist auf dem selben Stand wie 'origin/master'")
+ret=$(git status -uno|grep -E 'selben Stand|up-to-date')
 if [ ${#ret} -lt 2 ] ;then
   git pull
   mvn package
