@@ -8,7 +8,7 @@ This new software was made to replace the old Sequencer.
 
 ## Requirements
 To run releases: Java 1.8 JRE  
-To compile and run from source:  Java 1.8 JDK, [Maven](https://maven.apache.org/index.html) and [TimLib](https://github.com/neumantm/TimLib) version 0.2.0
+To compile and run from source:  Java 1.8 JDK, [Maven](https://maven.apache.org/index.html) and [TimLib](https://github.com/neumantm/TimLib) version 0.2.1
 
 ## Building and running
 To build it run `mvn package`. This will create a jar in `target`. This is only needed if you build from sources. You can get a compiled jar from the [Releases](https://github.com/c-hack/C-Hack-Panel-Control/releases).  
