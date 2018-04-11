@@ -7,4 +7,7 @@ ret=$(git status -uno|grep "Ihr Branch ist auf dem selben Stand wie 'origin/mast
 if [ ${#ret} -lt 2 ] ;then
   git pull
   mvn package
+  exit 0
 fi
+
+exit 1
