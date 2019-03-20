@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.c-hack.tim</groupId>
 	<artifactId>C-Hack-Panel-Control</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>C-Hack-Panel-Control</name>
 	<description>Control Software for the C-Hack Panels</description>
 	<url>https://github.com/c-hack/C-Hack-Panel-Control/</url>
