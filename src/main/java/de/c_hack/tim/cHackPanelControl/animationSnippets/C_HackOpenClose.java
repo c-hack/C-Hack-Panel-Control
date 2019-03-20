@@ -29,6 +29,7 @@ import de.c_hack.tim.cHackPanelControl.api.Mover;
 import de.c_hack.tim.cHackPanelControl.api.PColor;
 import de.c_hack.tim.cHackPanelControl.api.Panel;
 import de.c_hack.tim.cHackPanelControl.api.Panels;
+import de.c_hack.tim.lib.Log;
 
 /**
  * Animation Snippet for C-Hack open/close
@@ -61,8 +62,7 @@ public class C_HackOpenClose extends AnimationSnippet {
 				response.append(line);
 			return new JSONObject(response.toString()).getBoolean("state");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			AnimationSnippet.getLog().logException(e, Log.WARN, false);
 		}
 		
 		return false;
